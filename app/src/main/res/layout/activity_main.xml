@@ -4,27 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/madera"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:background="#99888888"
+        android:fontFamily="@font/anton"
         android:text="PERINOLA"
-        android:layout_gravity="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        android:layout_margin="40dp" />
-
-    <EditText
-        android:id="@+id/question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="24sp"
-        android:hint="ESCRIBE TU MENSAJE"
-        android:inputType="textShortMessage" />
+        android:textColor="#CA0F0F"
+        android:textSize="64sp" />
 
     <ImageButton
         android:id="@+id/btn"
@@ -33,20 +26,31 @@
         android:layout_gravity="center"
         android:layout_margin="40dp"
         android:contentDescription=""
-        android:scaleType="center"
-        android:src="@drawable/descarga" />
+        android:scaleType="centerInside"
+        android:src="@drawable/Perinola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:background="#B9E1CD67"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="presiona la perinola para girar!"
+        android:textAlignment="center"
+        android:textColor="#05145E"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/respuestavista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:textColor="#472E81"
+        android:layout_margin="60dp"
         android:text="..."
-        android:layout_margin="60dp"/>
-
+        android:textColor="#472E81"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
